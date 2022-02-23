@@ -1,0 +1,54 @@
+#logoHenry {
+  margin-right: 20px;
+}
+
+
+.naviBar{
+  display: flex;
+  justify-content: space-between;  
+  background-color: rgba(0, 0, 0, 0.295);
+  color: white;  
+  padding: 0px 20px 10px 20px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  width: 100%;   
+  
+}
+
+.Fecha{
+  vertical-align: middle;
+  align-self: middle;
+}
+.About{
+  text-decoration: none;
+}
+.BuscadoryAdd{
+  display: inline-flex;
+  justify-content: flex-end;
+  vertical-align: middle;
+  align-self: flex-end;
+  width: 100%;
+  float: right;
+  height: 30px;
+}
+
+.Buscador{  
+  border: 1px solid transparent;
+  border-radius: 3px;
+  vertical-align: middle;
+  box-shadow: rgb(0 0 0 / 26%) 0px 2px 10px 0px, rgb(0 0 0 / 6%) 0px 2px 5px 0px;
+}
+.btnAdd{
+  margin-left: 5px;  
+  color: #f8f9fa;
+  background-color: rgba(171, 195, 206, 0.562);
+  border-color: #f8f9fa;
+  cursor: pointer;
+  vertical-align: middle;
+      
+}
+
+.btnAdd:hover{
+transition: 650ms;
+color: rgb(0, 0, 0);
+background-color: rgba(0, 128, 0, 0);
+}

@@ -1,0 +1,25 @@
+.App {
+  background-image: url("../img/oceano5.jpg");
+  background-repeat: no-repeat;  
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column ; 
+  align-items: center;
+}
+@media screen and (max-height: 1900px) { 
+  .App{
+    height:1000px;  
+}
+}
+@media screen and (max-height: 600px) { 
+  .App{
+    height:600px;  
+}
+}
+
+.row {
+  display: flex;
+  justify-content: right;
+  margin-right: 5px;
+}

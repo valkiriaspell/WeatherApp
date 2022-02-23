@@ -1,0 +1,30 @@
+.cardContact {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+  .photo {
+      display: flex;
+      width: 300px;
+      height: 300px;
+  }
+  @media screen and (max-height: 1900px) { 
+    .photo{
+      height:100px;  
+  }
+  }
+  @media screen and (max-height: 600px) { 
+    .photo{
+      height:20px;  
+    }
+}
+
+ 
+  
