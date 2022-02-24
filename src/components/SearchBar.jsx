@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Nav.css';
 
 export default function SearchBar({onSearch}) {
   const [city, setCity] = useState("");

@@ -26,7 +26,7 @@ function Nav({onSearch}) {
         <Link to='/about'> 
         <span>About</span>
         </Link>
-        <Link to='/Contact' >
+        <Link to='/Contact'>
           <span>Contact</span>
           </Link>    </nav>
   );
