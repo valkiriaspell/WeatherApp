@@ -5,8 +5,10 @@ import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
 import {Route, Switch} from 'react-router-dom';
 import About from '../components/about';
-import City from '../components/City routerV5';
+// import City from '../components/City routerV5';
 import Contact from '../components/Contact';
+import Weather from '../components/Weather';
+import SearchBar from '../components/SearchBar'
 
 const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
 
@@ -35,22 +37,23 @@ function App() {
             longitud: recurso.coord.lon
           };
           setCities(oldCities => [...oldCities, ciudad]);
+          console.log(cities)
         } else {
           alert("Ciudad no encontrada");
         }
       });
   }
-  function onFilter(ciudadId) {
-    let ciudad = cities.filter(c => c.id === parseInt(ciudadId));
-    if(ciudad.length > 0) {
-        return ciudad[0];
-    } else {
-        return null;
-    }
-  }
+  // function onFilter(ciudadId) {
+  //   let ciudad = cities.filter(c => c.id === parseInt(ciudadId));
+  //   if(ciudad.length > 0) {
+  //       return ciudad[0];
+  //   } else {
+  //       return null;
+  //   }
+  // }
   return (    
     <div className="App">
-      <Nav onSearch={onSearch} />
+      <Nav path="/" />
       <Switch>
       <Route path="/about" exact> 
       <About/>
@@ -58,16 +61,19 @@ function App() {
       <Route path="/Contact" exact> 
       <Contact/>
       </Route>
-      <Route path="/city/:cityId" render={(props) => { let city = onFilter(props.match.params.cityId) 
-      return <City thecity={city}/>}}/>
+      <Route path="/Weather" exact > 
+      <SearchBar onSearch={onSearch} />
+      </Route>
+      {/* <Route path="/city/:cityId" render={(props) => { let city = onFilter(props.match.params.cityId) 
+      return <City thecity={city}/>}}/> */}
+        </Switch>      
               
-      <Route path="/">
+      <Route path="/Weather">
         <Cards 
         cities={cities} 
         onClose={onClose}/>
         </Route>
       {/* arriba lo de ciudad/:cityId indica que el valor real que se vea ahi ingrese al params de esa url con ese nombre osea si llego a ciudad/285965 en su params habria un objeto con una propiedad cityId:285965 */}      
-        </Switch>      
    </div>   
   );
 }

@@ -1,0 +1,20 @@
+.about {
+    border-radius: 8%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(60, 60, 60, 0.38);
+  border-radius: 5%;
+  margin-top: 2em;
+  margin-bottom: 10px; 
+  margin-left: 200px;
+  margin-right: 200px;
+  -ms-grid-column-align: center;    
+  padding: 50px 200px;
+  border-color: gray;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  box-shadow: 0.1em 0.1em 0.2em black;  
+  text-align: center;   
+  font-size: 25px;
+
+}

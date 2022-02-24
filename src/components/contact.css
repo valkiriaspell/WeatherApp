@@ -56,7 +56,7 @@
 
 .draw-border {
   box-shadow: inset 0 0 0 4px #58cdd1;
-  color: #07637a;
+  color: rgb(0 157 177 / 75%);
   -webkit-transition: color 0.25s 0.0833333333s;
   transition: color 0.25s 0.0833333333s;
   position: relative;
@@ -118,7 +118,7 @@
   letter-spacing: 0.05rem;
   margin: 1em;
   width: 13rem;
-  color: #394a51;
+  color: #ffffff;
 }
 
 .btn:focus {
@@ -134,21 +134,24 @@
 
 .social-icons li {
   display: inline-block;
-  margin: 0.15em;
+  margin: 0.25em;
   position: relative;
-  font-size: 1.3em;
+  font-size: 1.5em;   
+  /* esto le da el tamaño a los icons */
 }
 
 .social-icons i {
   color: #000;
   position: absolute;
-  top: 0.95em;
-  left: 0.96em;
+  top: 0.60em;
+  /* con top y left marco la distancia del icon hacia el box donde se encuentra */
+  left: 0.75em;
   transition: all 265ms ease-out;
+  
 }
 
 .social-icons a {
-  display: inline-block;
+  display: inline-block;  
 }
 
 .social-icons a:before {
@@ -169,6 +172,7 @@
   transition: all 265ms ease-in;
 }
 
+/* La sig propiedad hace el efecto hover de los iconos de socialmedia */
 .social-icons a:hover i {
   transform: scale(2.2);
   -ms-transform: scale(2.2);

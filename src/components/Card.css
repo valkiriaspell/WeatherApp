@@ -22,22 +22,27 @@
 }
 
 .btnX{
- 
   
     color: #f8f9fa;
-    background-color: rgba(171, 195, 206, 0.418);
+    background-color: rgba(245, 3, 3, 0.418);
     border-color: #f8f9fa;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 20%;
-    box-shadow: 0.1em 0.1em 0.2em black;
+    box-shadow: 0.1em 0.1em 0.2em black;    
     
+}
+
+#closeIcon {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
 }
 
 .btnX:hover{
   transition: 650ms;
-  color: rgb(0, 0, 0);
-  background-color: rgba(187, 7, 22, 0.774);
+  color: rgb(255, 255, 255);
+  background-color: rgb(228, 5, 24);
 }
 
 .card-body {

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import './Nav.css';
 
+
 export default function SearchBar({onSearch}) {
   const [city, setCity] = useState("");
   return (
+    <div>
     <div className="BuscadoryAdd">
     <form onSubmit={(e) => {
       e.preventDefault();
@@ -19,6 +21,7 @@ export default function SearchBar({onSearch}) {
       />
       <input type="submit" value="Add" id="btnAdd"/>
     </form>
+    </div>
     </div>
   );
 }
