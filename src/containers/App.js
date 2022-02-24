@@ -7,7 +7,7 @@ import {Route, Switch} from 'react-router-dom';
 import About from '../components/about';
 // import City from '../components/City routerV5';
 import Contact from '../components/Contact';
-import Weather from '../components/Weather';
+// import Weather from '../components/Weather';
 import SearchBar from '../components/SearchBar'
 
 const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
