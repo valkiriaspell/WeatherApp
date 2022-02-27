@@ -17,7 +17,7 @@ export default function SearchBar({onSearch}) {
         type="text"
         placeholder="Name or part of it..."
         value={city}
-        onChange={e => setCity(e.target.value)}
+        onChange={e => setCity(e.target.value)}        
       />
       <input type="submit" value="Add" id="btnAdd"/>
     </form>
